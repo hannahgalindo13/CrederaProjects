@@ -82,3 +82,19 @@
   width: 100%;
   flex: 0 0 190px;
 }
+
+#profile-groups .activity-active {
+  background-color: #52C1AD;
+}
+
+#profile-groups .activity-moderate {
+  background-color: #58B1C9;
+}
+
+#profile-groups .activity-low {
+  background-color: #C152A2;
+}
+
+#profile-groups .activity-inactive {
+  background-color: #C4C4C4;
+}
