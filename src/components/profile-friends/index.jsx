@@ -56,10 +56,16 @@ export const ProfileFriends = () => {
         <ul className="profile-friends-list">
           {friends.map((friend, index) => (
             <li className="profile-list-item fade-in" key={index}>
-              <div
-                className="profile-list-item-avatar"
-                aria-label="Stuart Raymond"
-              ></div>
+              <div className="profile-list-item-avatar-wrapper">
+                <div
+                  className="profile-list-item-avatar"
+                  aria-label={friend.name}
+                ></div>
+
+                {friend.topFriend && (
+                  <span className="top-friend-flag">★</span>
+                )}
+              </div>
               <div className="profile-list-item-info">
                 <p className="page-paragraph">{friend.name}</p>
                 <p className="page-micro">
