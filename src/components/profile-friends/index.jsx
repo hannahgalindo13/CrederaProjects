@@ -70,7 +70,12 @@ export const ProfileFriends = () => {
                 <div
                   className="profile-list-item-avatar"
                   aria-label={friend.name}
-                ></div>
+                >
+                    {friend.name
+                      .split(' ')
+                      .map(name => name[0])
+                      .join('')}
+                </div>
 
                 {friend.topFriend && (
                   <span className="top-friend-flag">★</span>
