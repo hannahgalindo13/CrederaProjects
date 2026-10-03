@@ -102,17 +102,17 @@
 }
 
 #profile-groups .activity-active {
-  background-color: #52C1AD;
+  background: linear-gradient(90deg, #52C1AD, #8DD8C9);
 }
 
 #profile-groups .activity-moderate {
-  background-color: #58B1C9;
+  background: linear-gradient(90deg, #58B1C9, #94D2E1);
 }
 
 #profile-groups .activity-low {
-  background-color: #C152A2;
+  background: linear-gradient(90deg, #C152A2, #D98BC1);
 }
 
 #profile-groups .activity-inactive {
-  background-color: #C4C4C4;
+  background: linear-gradient(90deg, #C4C4C4, #DDDDDD);
 }
