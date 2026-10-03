@@ -1,8 +1,11 @@
 import './style.css';
 import { getProfileData } from '../../services/profile';
 import { useQuery } from '@tanstack/react-query';
+import { useState } from 'react';
 
 export const ProfilePosts = () => {
+  const [expanded, setExpanded] = useState(false);
+
   const { data, isLoading } = useQuery({
     queryKey: ['profile'],
     queryFn: getProfileData,
@@ -49,7 +52,17 @@ export const ProfilePosts = () => {
               </p>
             </div>
           </div>
-          <p className="page-body post-content fade-in">{pinnedPost.post}</p>
+          <p className="page-body post-content fade-in">
+            {expanded
+              ? pinnedPost.post
+              : `${pinnedPost.post.slice(0, 150)}${pinnedPost.post.length > 150 ? '...' : ''}`}
+          </p>
+          <button
+            className="post-expand-button"
+            onClick={() => setExpanded(!expanded)}
+          >
+            {expanded ? 'Show less' : 'Read more'}
+          </button>
           <br></br>
           <p className="page-micro post-location">
             {pinnedPost.city}, {pinnedPost.state}
