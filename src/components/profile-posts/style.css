@@ -47,3 +47,12 @@
   height: 125px;
   margin-bottom: 8px;
 }
+
+.post-location {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.publish-date {
+  font-size: 12px;
+}

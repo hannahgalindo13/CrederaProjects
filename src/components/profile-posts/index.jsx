@@ -47,6 +47,13 @@ export const ProfilePosts = () => {
             </div>
           </div>
           <p className="page-body post-content fade-in">{pinnedPost.post}</p>
+          <br></br>
+          <p className="page-micro post-location">
+            {pinnedPost.city}, {pinnedPost.state}
+          </p>
+          <p className="page-micro post-date">
+            {new Date(pinnedPost.publishDate).toLocaleDateString()}
+          </p>
         </div>
       </div>
     </section>
