@@ -31,7 +31,7 @@ export const ProfileHeader = () => {
     <section id="profile-header">
       <div className="profile-header">
         <div className="profile-avatar">
-          <img className="loading" src="/avatar.png" />
+          <img className="loading" src="/AnnSmith.png" />
         </div>
         <div className="profile-info content-card">
           <h1 className="profile-info-name">

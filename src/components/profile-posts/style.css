@@ -63,6 +63,22 @@
   color: var(--primary_color);
   font-weight: bold;
   cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+
+}
+
+.post-expand-button:hover {
+  opacity: 0.75;
+}
+
+.post-expand-button:active {
+  transform: scale(0.97);
+}
+
+.post-expand-button:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: 3px;
 }
 
 .post-location {

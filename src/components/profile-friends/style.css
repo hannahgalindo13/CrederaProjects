@@ -19,7 +19,7 @@
   align-items: center;
   margin-bottom: 20px;
   background-color: var(--grayscale_1);
-  padding: 16px 24px;
+  padding: 12px 20px;
   border-radius: 10px;
 }
 
@@ -61,7 +61,6 @@
   font-weight: bold;
   font-size: 24px;
   background-color: #AFAFAF;
-  color: white;
 }
 
 .profile-list-item-avatar img {
@@ -78,4 +77,25 @@
 
 #profile-friends .skeleton-block {
     margin-bottom: 4px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .profile-friends-list {
+    height: 850px;
+    overflow-y: auto;
+  }
+}
+
+.profile-list-item {
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.profile-list-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.profile-list-item:active {
+  transform: scale(0.98);
 }

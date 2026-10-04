@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 :root {
   /* breakpoints */
   --phone-sm: '320px';
   --phone-md: '375px';
   --phone-lg: '425px';
-  --tablet-sm: '560px' --tablet-md: '640px';
+  --tablet-sm: '560px';
+  --tablet-md: '640px';
   --tablet-lg: '768px';
   --laptop: '1024px';
   --desktop: '1440px';
@@ -214,4 +214,36 @@ h3 {
   font-weight: 400;
   line-height: 16px;
   color: var(--deepSmoke);
+}
+
+@media only screen and (max-width: 1023px) {
+  .content-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-friends-list {
+    height: 850px;
+    overflow-y: auto;
+  }
+
+  .content-grid-block--main {
+    display: contents;
+  }
+
+  .content-grid-block--friends {
+    order: 3;
+  }
+
+  #profile-header {
+    order: 1;
+  }
+
+  #profile-posts {
+    order: 2;
+  }
+
+  #profile-groups {
+    order: 4;
+  }
 }
